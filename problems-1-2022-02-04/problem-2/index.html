@@ -1,0 +1,39 @@
+<html>
+<body>
+  <a href="#first">First</a>
+  <a href="#second">Second</a>
+
+  <section id="first">
+    <p>Paragraph 1</p>
+    <article>Article 1</article>
+    <article>Article 2</article>
+    <article>Article 3</article>
+    <div>Div 1</div>
+    <p>Paragraph 2</p>
+    <article>Article 4</article>
+    <article>Article 5</article>
+    <div>Div 2</div>
+    <p>Paragraph 3</p>
+  </section>
+
+  <section id="second">
+    <article>Article 6</article>
+    <p>Paragraph 4</p>
+    <div>Div 4</div>
+    <p>Paragraph 5</p>
+  </section>
+
+  <style>
+    
+    p:not(:first-child) {
+      color: rgb(242, 36, 0);
+    }
+    
+    :target {
+      color: #fff;
+      font-weight: bold;
+      background-color: rgb(91, 112, 125)
+    }
+  </style>
+</body>
+</html>
